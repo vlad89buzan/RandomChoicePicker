@@ -1,0 +1,77 @@
+@import "normalize";
+@import "var";
+// @import "fonts";
+//@import "mixins";
+// @import 'blocks/header';
+
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: Geneva, Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+ 
+}
+
+main {
+  flex: 1 1 100%;
+  position: relative;
+  background-color: #2588f0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container{
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+}
+h3{
+  color: #fff;
+  margin: 10px 20px;
+}
+p{
+  color: #fff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#textarea{
+  
+  font-family: inherit;
+  padding: 10px;
+  font-size: 16px;
+  margin: 0 20px;
+  min-height: 300px;
+}
+#tags{
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.tag{
+  background-color: #f0932b;
+  color: #fff;
+  border-radius: 50px;
+  padding: 10px 20px;
+  font-size: 14px;
+}
+
+.tag.highlight{
+  background-color: #273c75;
+}
+
+
